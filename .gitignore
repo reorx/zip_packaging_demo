@@ -1,0 +1,4 @@
+*.pex
+*.egg-info/
+dist/
+build/
