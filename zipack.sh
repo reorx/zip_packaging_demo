@@ -24,7 +24,7 @@ function indent() {
 }
 
 function build_requirements() {
-    pip install -r requirements.txt -t "$BUILD_DIR" 2>&1 | indent
+    pip install -r requirements.txt -t "$(realpath $BUILD_DIR)" 2>&1 | indent
     local rc=$?
 
     return $rc
